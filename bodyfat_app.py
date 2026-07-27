@@ -15,7 +15,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 # ---- STEP 2: Page settings (sirf UI ko thoda acha dikhane ke liye) ----
 st.set_page_config(page_title="Body Fat Predictor", page_icon="💪")
 st.title("💪 Body Fat Percentage Predictor")
-st.write("Ye app Linear Regression model use karke aapka Body Fat % predict karti hai.")
+st.write("This app uses a Linear Regression model to predict your Body Fat Percentage.")
 
 
 # ---- STEP 3: Load and train the model ----
@@ -76,8 +76,8 @@ col2.metric("Average Error", f"{mae:.2f} %")  # average kitna galat predict kart
 
 
 # ---- STEP 5: Take user input for prediction ----
-st.subheader("🔢 Apni Details Daalein")
-st.write("Neeche apni measurements (inches me) daal kar apna predicted Body Fat % dekhein:")
+st.subheader("🔢 Enter Your Details")
+st.write("Enter your body measurements below (in inches) to see your predicted Body Fat Percentage:")
 
 # Har feature ke liye ek number input box bana rahe hain
 # Hum ek "dictionary" (user_input) me sab values store kar rahe hain
